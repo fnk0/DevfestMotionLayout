@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gabilheri.devfestmotionlayout.CollapsiblePanel
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/top_container"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:minHeight="56dp"
+  android:background="#212121"
+  android:fitsSystemWindows="false"
+  android:paddingBottom="16dp"
+  app:layoutDescription="@xml/top_panel_scene"
+  app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
+  app:showPaths="true">
+
+  <ImageView
+    android:id="@+id/imgTopLeft"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/ic_airplane"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/imgTopMiddle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/imgTopMiddle"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/ic_wifi"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/imgTopRight"
+    app:layout_constraintStart_toEndOf="@+id/imgTopLeft"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/imgTopRight"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/ic_android"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/imgTopMiddle"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/imgMiddleLeft"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="64dp"
+    android:src="@drawable/ic_bluetooth"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/imgMiddleMiddle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imgTopLeft"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/imgMiddleMiddle"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="64dp"
+    android:src="@drawable/ic_brightness"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toStartOf="@+id/imgMiddleRight"
+    app:layout_constraintStart_toEndOf="@+id/imgMiddleLeft"
+    app:layout_constraintTop_toBottomOf="@+id/imgTopMiddle"
+    tools:ignore="ContentDescription" />
+
+  <ImageView
+    android:id="@+id/imgMiddleRight"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="64dp"
+    android:src="@drawable/ic_flash"
+    android:background="@drawable/item_background"
+    android:padding="8dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/imgMiddleMiddle"
+    app:layout_constraintTop_toBottomOf="@+id/imgTopRight"
+    tools:ignore="ContentDescription" />
+</com.gabilheri.devfestmotionlayout.CollapsiblePanel>
