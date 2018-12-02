@@ -14,7 +14,7 @@
     android:layout_height="wrap_content"
     android:theme="@style/AppTheme">
 
-    <include layout="@layout/top_panel_copy"/>
+    <include layout="@layout/top_panel"/>
 
   </com.google.android.material.appbar.AppBarLayout>
 
