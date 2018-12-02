@@ -9,7 +9,7 @@
   android:background="@color/colorPrimary"
   android:fitsSystemWindows="false"
   android:minHeight="56dp"
-  app:layoutDescription="@xml/top_panel_scene"
+  app:layoutDescription="@xml/top_panel_scene_no_keyframe"
   app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
   app:showPaths="true"
   >
